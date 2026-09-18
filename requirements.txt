@@ -1,0 +1,8 @@
+# Pinned exactly — every measurement in runs.jsonl was made against these versions.
+# The harness's whole premise (roofline calibration, kernel headroom findings) is
+# machine- and version-specific; do not upgrade in the primary venv. See CLAUDE.md
+# and setup_control.sh for how to set up a *separate* venv to test a newer MLX.
+
+mlx==0.32.2
+mlx-lm==0.31.3
+transformers==5.16.1

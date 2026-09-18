@@ -1,0 +1,71 @@
+{
+ "note": "Shared token ids for Recipe 10. Written by the first runtime to run; every later runtime loads these verbatim so all runtimes are given byte-identical work.",
+ "source_runtime": "ours",
+ "session": "smoke2",
+ "prompts": [
+  {
+   "prompt": "Explain in two sentences why the sky appears blue.",
+   "ids": [
+    2,
+    105,
+    9731,
+    107,
+    98,
+    107,
+    106,
+    107,
+    105,
+    2364,
+    107,
+    155122,
+    528,
+    1156,
+    23974,
+    3217,
+    506,
+    7217,
+    7412,
+    3730,
+    236761,
+    106,
+    107,
+    105,
+    4368,
+    107
+   ],
+   "how": "chat_template"
+  },
+  {
+   "prompt": "Write a Python function that reverses a linked list.",
+   "ids": [
+    2,
+    105,
+    9731,
+    107,
+    98,
+    107,
+    106,
+    107,
+    105,
+    2364,
+    107,
+    6974,
+    496,
+    17856,
+    1292,
+    600,
+    140927,
+    496,
+    12809,
+    1694,
+    236761,
+    106,
+    107,
+    105,
+    4368,
+    107
+   ],
+   "how": "chat_template"
+  }
+ ]
+}

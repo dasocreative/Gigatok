@@ -1,0 +1,523 @@
+{
+  "host": {
+    "chip": "Apple M3",
+    "cpu_cores": "8",
+    "perf_cores": "4",
+    "eff_cores": "4",
+    "gpu_architecture": "applegpu_g15g",
+    "physical_memory_bytes": 17179869184,
+    "metal_device_memory_bytes": 17179869184,
+    "max_recommended_working_set_bytes": 12713115648,
+    "iogpu_wired_limit_mb": 0,
+    "macos": "26.6.1",
+    "machine": "arm64",
+    "python": "3.12.14",
+    "mlx_version": "0.32.2",
+    "mlx_lm_version": "0.31.3"
+  },
+  "model": "mlx-community/gemma-4-e4b-it-OptiQ-4bit",
+  "revision": "6be2eaf50f08b88b5dadca0f4a02c0a0880e7bd3",
+  "config_present": true,
+  "params": {
+    "total_bytes": 6529800276,
+    "text_bytes": 6529800276,
+    "non_text_bytes": 0,
+    "embed_bytes": 713031680,
+    "gather_only_bytes": 2994733056,
+    "dense_bytes": 2822035540,
+    "lm_head_bytes": 713031680,
+    "tied_embeddings": true,
+    "active_bytes_per_token": 3535067220,
+    "by_top_level": {
+      "language_model": 6529800276
+    },
+    "non_text_keys": [],
+    "gather_only_keys": [
+      "language_model.model.embed_tokens_per_layer.weight",
+      "language_model.model.embed_tokens_per_layer.scales",
+      "language_model.model.embed_tokens_per_layer.biases"
+    ]
+  },
+  "kv": {
+    "profiles": [
+      {
+        "index": 0,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 0,
+        "k_is_v": false
+      },
+      {
+        "index": 1,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 1,
+        "k_is_v": false
+      },
+      {
+        "index": 2,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 2,
+        "k_is_v": false
+      },
+      {
+        "index": 3,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 3,
+        "k_is_v": false
+      },
+      {
+        "index": 4,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 4,
+        "k_is_v": false
+      },
+      {
+        "index": 5,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 5,
+        "k_is_v": false
+      },
+      {
+        "index": 6,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 6,
+        "k_is_v": false
+      },
+      {
+        "index": 7,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 7,
+        "k_is_v": false
+      },
+      {
+        "index": 8,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 8,
+        "k_is_v": false
+      },
+      {
+        "index": 9,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 9,
+        "k_is_v": false
+      },
+      {
+        "index": 10,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 10,
+        "k_is_v": false
+      },
+      {
+        "index": 11,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 11,
+        "k_is_v": false
+      },
+      {
+        "index": 12,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 12,
+        "k_is_v": false
+      },
+      {
+        "index": 13,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 13,
+        "k_is_v": false
+      },
+      {
+        "index": 14,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 14,
+        "k_is_v": false
+      },
+      {
+        "index": 15,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 15,
+        "k_is_v": false
+      },
+      {
+        "index": 16,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 16,
+        "k_is_v": false
+      },
+      {
+        "index": 17,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 17,
+        "k_is_v": false
+      },
+      {
+        "index": 18,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 18,
+        "k_is_v": false
+      },
+      {
+        "index": 19,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 19,
+        "k_is_v": false
+      },
+      {
+        "index": 20,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 20,
+        "k_is_v": false
+      },
+      {
+        "index": 21,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 21,
+        "k_is_v": false
+      },
+      {
+        "index": 22,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 22,
+        "k_is_v": false
+      },
+      {
+        "index": 23,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 23,
+        "k_is_v": false
+      }
+    ],
+    "probe_lengths": [
+      64,
+      1024,
+      2176
+    ],
+    "measured": {
+      "64": {
+        "kv_raw_bytes": 3670016,
+        "kv_dedup_bytes": 3670016,
+        "n_caches": 24
+      },
+      "1024": {
+        "kv_raw_bytes": 37748736,
+        "kv_dedup_bytes": 37748736,
+        "n_caches": 24
+      },
+      "2176": {
+        "kv_raw_bytes": 56623104,
+        "kv_dedup_bytes": 56623104,
+        "n_caches": 24
+      }
+    },
+    "multiplicity": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      16,
+      4
+    ],
+    "n_layers": 42
+  },
+  "table": {
+    "active_weight_bytes_per_token": 3535067220,
+    "achievable_gbs_used": 89.0,
+    "contexts": [
+      {
+        "context": 128,
+        "kv_resident_bytes": 7340032.0,
+        "kv_read_bytes_per_token": 12845056.0,
+        "bytes_per_token": 3547912276.0,
+        "ceiling_tok_s": 25.08517490752074
+      },
+      {
+        "context": 2048,
+        "kv_resident_bytes": 54525952.0,
+        "kv_read_bytes_per_token": 95420416.0,
+        "bytes_per_token": 3630487636.0,
+        "ceiling_tok_s": 24.514613165866184
+      },
+      {
+        "context": 8192,
+        "kv_resident_bytes": 155189248.0,
+        "kv_read_bytes_per_token": 271581184.0,
+        "bytes_per_token": 3806648404.0,
+        "ceiling_tok_s": 23.38014719365188
+      },
+      {
+        "context": 16384,
+        "kv_resident_bytes": 289406976.0,
+        "kv_read_bytes_per_token": 506462208.0,
+        "bytes_per_token": 4041529428.0,
+        "ceiling_tok_s": 22.021366313307468
+      },
+      {
+        "context": 32768,
+        "kv_resident_bytes": 557842432.0,
+        "kv_read_bytes_per_token": 976224256.0,
+        "bytes_per_token": 4511291476.0,
+        "ceiling_tok_s": 19.728275256315982
+      }
+    ],
+    "kv_profiles": [
+      {
+        "index": 0,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 0,
+        "k_is_v": false
+      },
+      {
+        "index": 1,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 1,
+        "k_is_v": false
+      },
+      {
+        "index": 2,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 2,
+        "k_is_v": false
+      },
+      {
+        "index": 3,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 3,
+        "k_is_v": false
+      },
+      {
+        "index": 4,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 4,
+        "k_is_v": false
+      },
+      {
+        "index": 5,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 5,
+        "k_is_v": false
+      },
+      {
+        "index": 6,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 6,
+        "k_is_v": false
+      },
+      {
+        "index": 7,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 7,
+        "k_is_v": false
+      },
+      {
+        "index": 8,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 8,
+        "k_is_v": false
+      },
+      {
+        "index": 9,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 9,
+        "k_is_v": false
+      },
+      {
+        "index": 10,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 10,
+        "k_is_v": false
+      },
+      {
+        "index": 11,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 11,
+        "k_is_v": false
+      },
+      {
+        "index": 12,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 12,
+        "k_is_v": false
+      },
+      {
+        "index": 13,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 13,
+        "k_is_v": false
+      },
+      {
+        "index": 14,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 14,
+        "k_is_v": false
+      },
+      {
+        "index": 15,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 15,
+        "k_is_v": false
+      },
+      {
+        "index": 16,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 16,
+        "k_is_v": false
+      },
+      {
+        "index": 17,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 17,
+        "k_is_v": false
+      },
+      {
+        "index": 18,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 18,
+        "k_is_v": false
+      },
+      {
+        "index": 19,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 19,
+        "k_is_v": false
+      },
+      {
+        "index": 20,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 20,
+        "k_is_v": false
+      },
+      {
+        "index": 21,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 21,
+        "k_is_v": false
+      },
+      {
+        "index": 22,
+        "cls": "RotatingKVCache",
+        "bytes_per_token": 2048.0,
+        "cap_bytes": 1048576.0,
+        "shared_group": 22,
+        "k_is_v": false
+      },
+      {
+        "index": 23,
+        "cls": "KVCache",
+        "bytes_per_token": 4096.0,
+        "cap_bytes": null,
+        "shared_group": 23,
+        "k_is_v": false
+      }
+    ],
+    "max_context_within_headroom": 261448,
+    "headroom_bytes": 4304536412.96
+  }
+}

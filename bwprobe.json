@@ -1,0 +1,339 @@
+{
+  "host": {
+    "chip": "Apple M3",
+    "cpu_cores": "8",
+    "perf_cores": "4",
+    "eff_cores": "4",
+    "gpu_architecture": "applegpu_g15g",
+    "physical_memory_bytes": 17179869184,
+    "metal_device_memory_bytes": 17179869184,
+    "max_recommended_working_set_bytes": 12713115648,
+    "iogpu_wired_limit_mb": 0,
+    "macos": "26.6.1",
+    "machine": "arm64",
+    "python": "3.12.14",
+    "mlx_version": "0.32.2",
+    "mlx_lm_version": "0.31.3"
+  },
+  "sweep": [
+    {
+      "probe": "read",
+      "buffer_bytes": 4194304,
+      "bytes_moved_per_rep": 4194304,
+      "best_s": 0.00028174999897601083,
+      "median_s": 0.000291458003630396,
+      "gbs_best": 14.886615848247502,
+      "gbs_median": 14.3907662433552
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 4194304,
+      "bytes_moved_per_rep": 8388608,
+      "best_s": 0.00034050000249408185,
+      "median_s": 0.0004097920027561486,
+      "gbs_best": 24.63614666242418,
+      "gbs_median": 20.470404360213287
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 4194304,
+      "bytes_moved_per_rep": 12582912,
+      "best_s": 0.00044420899939723313,
+      "median_s": 0.0005039159950683825,
+      "gbs_best": 28.326558032534933,
+      "gbs_median": 24.970257191960084
+    },
+    {
+      "probe": "read",
+      "buffer_bytes": 16777216,
+      "bytes_moved_per_rep": 16777216,
+      "best_s": 0.00039383400144288316,
+      "median_s": 0.00041037500341190025,
+      "gbs_best": 42.59971444449588,
+      "gbs_median": 40.882646020134
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 16777216,
+      "bytes_moved_per_rep": 33554432,
+      "best_s": 0.0006125830041128211,
+      "median_s": 0.0006516249995911494,
+      "gbs_best": 54.775323139425836,
+      "gbs_median": 51.49346943572321
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 16777216,
+      "bytes_moved_per_rep": 50331648,
+      "best_s": 0.001176291007141117,
+      "median_s": 0.0011942499986616895,
+      "gbs_best": 42.788432194450856,
+      "gbs_median": 42.14498476567141
+    },
+    {
+      "probe": "read",
+      "buffer_bytes": 33554432,
+      "bytes_moved_per_rep": 33554432,
+      "best_s": 0.0005710830009775236,
+      "median_s": 0.0006150419940240681,
+      "gbs_best": 58.755788462561185,
+      "gbs_median": 54.55632676471671
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 33554432,
+      "bytes_moved_per_rep": 67108864,
+      "best_s": 0.000979707998340018,
+      "median_s": 0.0010069160052808002,
+      "gbs_best": 68.49884262832073,
+      "gbs_median": 66.64792658776464
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 33554432,
+      "bytes_moved_per_rep": 100663296,
+      "best_s": 0.002074457996059209,
+      "median_s": 0.0020939579990226775,
+      "gbs_best": 48.52510689116256,
+      "gbs_median": 48.07321639067404
+    },
+    {
+      "probe": "read",
+      "buffer_bytes": 67108864,
+      "bytes_moved_per_rep": 67108864,
+      "best_s": 0.000937999997404404,
+      "median_s": 0.0009655409958213568,
+      "gbs_best": 71.5446313280394,
+      "gbs_median": 69.50389915128616
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 67108864,
+      "bytes_moved_per_rep": 134217728,
+      "best_s": 0.0017234580009244382,
+      "median_s": 0.0017326660017715767,
+      "gbs_best": 77.87699376950731,
+      "gbs_median": 77.46312784043096
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 67108864,
+      "bytes_moved_per_rep": 201326592,
+      "best_s": 0.0039002089979476295,
+      "median_s": 0.003916833004041109,
+      "gbs_best": 51.61943683170369,
+      "gbs_median": 51.40035120013683
+    },
+    {
+      "probe": "read",
+      "buffer_bytes": 134217728,
+      "bytes_moved_per_rep": 134217728,
+      "best_s": 0.0016218329983530566,
+      "median_s": 0.0016372909958590753,
+      "gbs_best": 82.75681166698162,
+      "gbs_median": 81.97548776573885
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 134217728,
+      "bytes_moved_per_rep": 268435456,
+      "best_s": 0.003182249995006714,
+      "median_s": 0.0032004169988795184,
+      "gbs_best": 84.35398112065474,
+      "gbs_median": 83.87515004887818
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 134217728,
+      "bytes_moved_per_rep": 402653184,
+      "best_s": 0.007662000003620051,
+      "median_s": 0.007722957998339552,
+      "gbs_best": 52.55196865175662,
+      "gbs_median": 52.13717128677523
+    },
+    {
+      "probe": "read",
+      "buffer_bytes": 268435456,
+      "bytes_moved_per_rep": 268435456,
+      "best_s": 0.003015124995727092,
+      "median_s": 0.0030947909981478006,
+      "gbs_best": 89.02962775354767,
+      "gbs_median": 86.73783016709554
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 268435456,
+      "bytes_moved_per_rep": 536870912,
+      "best_s": 0.006187416998727713,
+      "median_s": 0.006229374994290993,
+      "gbs_best": 86.76818001928658,
+      "gbs_median": 86.183752381583
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 268435456,
+      "bytes_moved_per_rep": 805306368,
+      "best_s": 0.019230583995522466,
+      "median_s": 0.030513042001985013,
+      "gbs_best": 41.87633449860403,
+      "gbs_median": 26.392201995055462
+    },
+    {
+      "probe": "read",
+      "buffer_bytes": 536870912,
+      "bytes_moved_per_rep": 536870912,
+      "best_s": 0.0072758340029395185,
+      "median_s": 0.015496541003813036,
+      "gbs_best": 73.78822988307569,
+      "gbs_median": 34.6445643494183
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 536870912,
+      "bytes_moved_per_rep": 1073741824,
+      "best_s": 0.018093708000378683,
+      "median_s": 0.025388000001839828,
+      "gbs_best": 59.34338190809356,
+      "gbs_median": 42.29328123216431
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 536870912,
+      "bytes_moved_per_rep": 1610612736,
+      "best_s": 0.05480666700168513,
+      "median_s": 0.06263791699893773,
+      "gbs_best": 29.387168096729525,
+      "gbs_median": 25.713063479223205
+    },
+    {
+      "probe": "read",
+      "buffer_bytes": 1073741824,
+      "bytes_moved_per_rep": 1073741824,
+      "best_s": 0.021663457999238744,
+      "median_s": 0.03180058299767552,
+      "gbs_best": 49.564655099741294,
+      "gbs_median": 33.76484714379248
+    },
+    {
+      "probe": "copy",
+      "buffer_bytes": 1073741824,
+      "bytes_moved_per_rep": 2147483648,
+      "best_s": 0.034671082998102065,
+      "median_s": 0.0490657909977017,
+      "gbs_best": 61.93875305589836,
+      "gbs_median": 43.76743153087231
+    },
+    {
+      "probe": "triad",
+      "buffer_bytes": 1073741824,
+      "bytes_moved_per_rep": 3221225472,
+      "best_s": 0.10596612499648472,
+      "median_s": 0.11665450000145938,
+      "gbs_best": 30.398634206043297,
+      "gbs_median": 27.613383726814668
+    }
+  ],
+  "gemv": [
+    {
+      "probe": "gemv_fp16_4096x2560",
+      "buffer_bytes": 20971520,
+      "bytes_moved_per_rep": 20971520,
+      "best_s": 0.0005718749962397851,
+      "median_s": 0.0007586249994346872,
+      "gbs_best": 36.67151062363761,
+      "gbs_median": 27.644119315376603,
+      "effective_bits_per_weight": 16.0
+    },
+    {
+      "probe": "gemv_q4g64_4096x2560",
+      "buffer_bytes": 5898240,
+      "bytes_moved_per_rep": 5898240,
+      "best_s": 0.00036995799746364355,
+      "median_s": 0.00038133299676701427,
+      "gbs_best": 15.942999044316188,
+      "gbs_median": 15.4674262390246,
+      "effective_bits_per_weight": 4.5
+    },
+    {
+      "probe": "gemv_fp16_16384x2560",
+      "buffer_bytes": 83886080,
+      "bytes_moved_per_rep": 83886080,
+      "best_s": 0.0013006250010221265,
+      "median_s": 0.001517750002676621,
+      "gbs_best": 64.49674574460445,
+      "gbs_median": 55.27002461015522,
+      "effective_bits_per_weight": 16.0
+    },
+    {
+      "probe": "gemv_q4g64_16384x2560",
+      "buffer_bytes": 23592960,
+      "bytes_moved_per_rep": 23592960,
+      "best_s": 0.0007661669951630756,
+      "median_s": 0.0009579170000506565,
+      "gbs_best": 30.793495607283802,
+      "gbs_median": 24.62944075400307,
+      "effective_bits_per_weight": 4.5
+    },
+    {
+      "probe": "gemv_fp16_65536x2560",
+      "buffer_bytes": 335544320,
+      "bytes_moved_per_rep": 335544320,
+      "best_s": 0.004422917001647875,
+      "median_s": 0.012288833000638988,
+      "gbs_best": 75.8649370709385,
+      "gbs_median": 27.30481567961356,
+      "effective_bits_per_weight": 16.0
+    },
+    {
+      "probe": "gemv_q4g64_65536x2560",
+      "buffer_bytes": 94371840,
+      "bytes_moved_per_rep": 94371840,
+      "best_s": 0.0014616660046158358,
+      "median_s": 0.0016755830001784489,
+      "gbs_best": 64.56457200344028,
+      "gbs_median": 56.321793662235436,
+      "effective_bits_per_weight": 4.5
+    },
+    {
+      "probe": "gemv_fp16_262144x2560",
+      "buffer_bytes": 1342177280,
+      "bytes_moved_per_rep": 1342177280,
+      "best_s": 0.02229208299831953,
+      "median_s": 0.03618004099553218,
+      "gbs_best": 60.20869741518453,
+      "gbs_median": 37.09717410673314,
+      "effective_bits_per_weight": 16.0
+    },
+    {
+      "probe": "gemv_q4g64_262144x2560",
+      "buffer_bytes": 377487360,
+      "bytes_moved_per_rep": 377487360,
+      "best_s": 0.00460308299807366,
+      "median_s": 0.007171791003202088,
+      "gbs_best": 82.00750674232343,
+      "gbs_median": 52.63501959712128,
+      "effective_bits_per_weight": 4.5
+    }
+  ],
+  "fit_quantized": {
+    "ok": true,
+    "stream_gbs": 90.12350814603852,
+    "dispatch_overhead_ms": 0.4145270067965612,
+    "r2": 1.0,
+    "points_used": 2,
+    "min_bytes": 33554432
+  },
+  "fit_fp16": {
+    "ok": true,
+    "stream_gbs": 58.86537682204778,
+    "dispatch_overhead_ms": -0.6368053315478998,
+    "r2": 0.997313936124444,
+    "points_used": 3,
+    "min_bytes": 33554432
+  },
+  "achievable_read_gbs": 89.02962775354767,
+  "achievable_stream_gbs": 86.76818001928658,
+  "largest_gemv_call_gbs": 82.00750674232343,
+  "achievable_gemv_gbs": 89.02962775354767,
+  "denominator_source": "read plateau (GEMV fit was over-extrapolated)"
+}
